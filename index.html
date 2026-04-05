@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pink Club</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-pink-600 font-['Poppins']">
+    <header class="bg-pink-500 p-4">
+      <nav
+        class="container mx-auto flex justify-between items-center hidden md:flex"
+      >
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-pink-50 text-2xl font-bold"
+            ><span
+              class="text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+            >
+              Pink Club</span
+            ></a
+          >
+        </div>
+        <ul class="flex space-x-4 font-['Poppins']">
+          <li><a href="#" class="text-pink-50">Home</a></li>
+          <li><a href="#" class="text-pink-50">Profile Page</a></li>
+          <li><a href="#" class="text-pink-50">Posts</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex justify-end">
+        <button id="menuButton" class="text-2xl text-pink-200 md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!--Mobile menu-->
+    <div
+      id="mobileMenu"
+      class="fixed top-0 left-0 z-50 flex hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-900/95 text-pink-100 md:hidden"
+    >
+      <button id="closeMobileMenu" class="absolute top-4 right-4 text-2xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="#" class="mt-8 text-lg hover:underline">Home</a>
+      <a href="profilePage.html" class="text-lg hover:underline"
+        >Profile Page</a
+      >
+      <a href="loggedinfeed.html" class="text-lg hover:underline">Posts</a>
+      <a href="index.html" class="text-lg hover:underline"> Log out </a>
+      <div class="flex justify-between items-center mt-4">
+        <img
+          src="src/images/diamondmoon.png"
+          alt="Pink Club Logo"
+          class="h-14 w-14"
+        />
+        <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
+          >Pink Club</a
+        >
+      </div>
+    </div>
+
+    <section class="container mx-auto my-8 p-4 text-center">
+      <h2 class="text-4xl font-semibold text-pink-200 mb-4">
+        Welcome to the<span
+          class="text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+        >
+          Pink Club!</span
+        >
+      </h2>
+      <p class="text-pink-100 text-lg">
+        Join us for fun, friendship, and fabulous pink events!
+      </p>
+    </section>
+    <section
+      class="bg-pink-500 p-4 flex flex-col justify-center items-center w-80 h-auto mx-auto rounded-lg border-4 border-pink-300 shadow-lg"
+    >
+      <h3 class="text-2xl font-semibold text-pink-200 mb-4">
+        Log in to Your Account!
+      </h3>
+      <form id="loginForm" class="w-48">
+        <input
+          id="username"
+          type="text"
+          placeholder="Enter your username"
+          class="w-full p-2 mb-4 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+        />
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your password"
+          class="w-full p-2 mb-4 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+        />
+        <p id="errorMessage" class="text-pink-900 text-sm mb-4 hidden">
+          Please enter a valid username and password.
+        </p>
+        <p id="successMessage" class="text-green-500 text-sm mb-4 hidden">
+          Login successful!
+        </p>
+        <button
+          type="submit"
+          class="w-full bg-pink-400 text-white p-2 rounded hover:bg-pink-300 transition duration-200 font-['DynaPuff']"
+        >
+          Login
+        </button>
+      </form>
+      <p class="text-pink-100 mt-4">
+        Don't have an account?
+        <a href="src/pages/newUser.html" class="text-pink-300">Sign up</a>
+      </p>
+      <p class="text-pink-100 mt-2">
+        Forgot your password?
+        <a href="#" class="text-pink-300">Click here</a>
+      </p>
+    </section>
+  </body>
+  <script src="src/js/mobileMenu.js"></script>
+  <script src="src/js/formValidation.js"></script>
+</html>

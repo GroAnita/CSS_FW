@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pink Club</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-pink-600 font-['Poppins']">
+    <header class="bg-pink-500 p-4">
+      <nav
+        class="container mx-auto flex justify-between items-center hidden md:flex"
+      >
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
+            ><span
+              class="text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+            >
+              Pink Club</span
+            ></a
+          >
+        </div>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-pink-50">Home</a></li>
+          <li>
+            <a href="profilePage.html" class="text-pink-50">Profile Page</a>
+          </li>
+          <li><a href="loggedinfeed.html" class="text-pink-50">Posts</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex justify-end">
+        <button id="menuButton" class="text-2xl text-pink-200 md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!--Mobile menu-->
+    <div
+      id="mobileMenu"
+      class="fixed top-0 left-0 z-50 flex hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-700/95 text-pink-100 md:hidden"
+    >
+      <button id="closeMobileMenu" class="absolute top-4 right-4 text-2xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a
+        href="#"
+        class="mt-12 text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+        >Pink Club</a
+      >
+      <a href="#" class="mt-8 text-2xl hover:underline">Home</a>
+      <a href="profilePage.html" class="text-2xl hover:underline"
+        >Profile Page</a
+      >
+      <a href="loggedinfeed.html" class="text-2xl hover:underline">Posts</a>
+      <a href="index.html" class="text-2xl hover:underline"> Log out </a>
+    </div>
+
+    <div
+      class="p-[4px] rounded-lg bg-gradient-to-r from-pink-300 via-fuchsia-400 to-rose-500 bg-[length:200%_200%] animate-gradient shadow-lg mt-4 w-full md:w-2/4 mx-auto"
+    >
+      <section
+        class="bg-pink-700 p-4 flex flex-col justify-center items-center w-full md:w-full h-auto mx-auto rounded-lg"
+      >
+        <section class="container mx-auto my-8 p-4 text-center">
+          <h2 class="text-4xl font-semibold text-pink-200 mb-4">
+            Welcome to the<span
+              class="text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+            >
+              Pink Club!</span
+            >
+          </h2>
+          <p class="text-pink-100 text-lg">
+            Join us for fun, friendship, and fabulous pink events!
+          </p>
+        </section>
+        <form id="loginForm" class="w-3/4">
+          <div class="field flex gap-2 relative">
+            <label for="fullName" class="sr-only">Full Name</label>
+            <input
+              id="fullName"
+              type="text"
+              placeholder="Enter your full name"
+              class="w-full p-2 mb-4 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            />
+            <span
+              class="valid hidden text-green-500 text-md absolute top-1 -right-4"
+              >&#10003;</span
+            >
+            <span
+              class="invalid hidden text-red-500 text-md absolute top-1 -right-4"
+              >&#10007;</span
+            >
+          </div>
+          <div
+            class="flex flex-col md:flex-row md:justify-between space-x-0 md:space-x-4 mb-4"
+          >
+            <div class="field flex gap-2 relative">
+              <label for="phoneNumber" class="sr-only">Phone Number</label>
+              <input
+                id="phoneNumber"
+                type="tel"
+                placeholder="Enter your phone number"
+                class="w-full flex-1 p-2 mb-4 rounded border text-pink-900 border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              />
+              <span
+                class="valid hidden text-green-500 text-md absolute top-1 -right-4"
+                >&#10003;</span
+              >
+              <span
+                class="invalid hidden text-red-500 text-md absolute top-1 -right-4"
+                >&#10007;</span
+              >
+            </div>
+            <div class="field flex gap-2 relative">
+              <label for="age" class="sr-only">Date of Birth</label>
+              <input
+                id="age"
+                type="date"
+                class="w-full p-2 mb-4 rounded border text-pink-900 border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              />
+              <span
+                class="valid hidden text-green-500 text-md absolute top-1 -right-4"
+                >&#10003;</span
+              >
+              <span
+                class="invalid hidden text-red-500 text-md absolute top-1 -right-4"
+                >&#10007;</span
+              >
+            </div>
+          </div>
+          <div class="field flex gap-2 relative">
+            <label for="username" class="sr-only">Username</label>
+            <input
+              id="username"
+              type="text"
+              placeholder="Enter your username"
+              class="w-full p-2 mb-4 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            />
+            <span
+              class="valid hidden text-green-500 text-md absolute top-1 -right-4"
+              >&#10003;</span
+            >
+            <span
+              class="invalid hidden text-red-500 text-md absolute top-1 -right-4"
+              >&#10007;</span
+            >
+          </div>
+          <div class="field flex gap-2 relative">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              class="w-full p-2 mb-4 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            />
+            <span
+              class="valid hidden text-green-500 text-md absolute top-1 -right-4"
+              >&#10003;</span
+            >
+            <span
+              class="invalid hidden text-red-500 text-md absolute top-1 -right-4"
+              >&#10007;</span
+            >
+          </div>
+          <div class="field flex gap-2">
+            <label for="password" class="sr-only">Password</label>
+            <div class="passwordContainer w-full relative">
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter your password"
+                class="w-full p-2 mb-4 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              />
+              <span
+                class="valid hidden text-green-500 text-md absolute top-1 -right-4"
+                >&#10003;</span
+              >
+              <span
+                class="invalid hidden text-red-500 text-md absolute top-1 -right-4"
+                >&#10007;</span
+              >
+              <i
+                class="fa-solid fa-eye-slash text-pink-500 password-toggle absolute top-1 right-0 m-2"
+              ></i>
+            </div>
+          </div>
+
+          <div class="field flex gap-2">
+            <label for="confirmPassword" class="sr-only"
+              >Confirm Password</label
+            >
+            <div class="passwordContainer w-full relative flex gap-2">
+              <input
+                id="confirmPassword"
+                type="password"
+                placeholder="Confirm your password"
+                class="w-full p-2 mb-4 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              />
+              <span
+                class="valid hidden text-green-500 text-md absolute top-1 -right-4"
+                >&#10003;</span
+              >
+              <span
+                class="invalid hidden text-red-500 text-md absolute top-1 -right-4"
+                >&#10007;</span
+              >
+              <i
+                class="fa-solid fa-eye-slash text-pink-500 password-toggle absolute top-1 right-0 m-2"
+              ></i>
+            </div>
+          </div>
+          <p id="errorMessage" class="text-pink-900 text-sm mb-4 hidden">
+            Passwords do not match or are too weak. Please try again.Passwords
+            must be atleast 8 characters long.
+          </p>
+          <p id="successMessage" class="text-green-500 text-sm mb-4 hidden">
+            Login successful!
+          </p>
+          <label class="flex items-center gap-2 cursor-pointer group mb-2">
+            <input type="checkbox" class="sr-only" />
+
+            <div
+              class="w-6 h-6 border-2 border-pink-300 rounded flex items-center justify-centertransition group-has-[:checked]:bg-pink-400 group-has-[:checked]:shadow-[0_0_10px_#f472b6]"
+            >
+              <span
+                class="text-pink-50 text-2xl scale-0 group-has-[:checked]:scale-100 group-has-[:checked]:animate-pop transition-transform duration-300"
+                >✓</span
+              >
+            </div>
+
+            <span class="text-pink-100"
+              >Agree to our
+              <a href="#" class="text-pink-200 underline font-italic"
+                >terms</a
+              ></span
+            >
+          </label>
+          <button
+            type="submit"
+            class="font-['DynaPuff'] w-full bg-pink-400 text-white p-2 rounded border-2 border-pink-50 hover:bg-pink-300 transition duration-200"
+          >
+            Become a member
+          </button>
+        </form>
+        <p class="text-pink-100 mt-4">
+          Already have an account?
+          <a href="../../index.html" class="text-pink-300">Sign in</a>
+        </p>
+        <p class="text-pink-100 mt-2">
+          Forgot your password?
+          <a href="#" class="text-pink-300">Click here</a>
+        </p>
+      </section>
+    </div>
+  </body>
+  <script src="../../src/js/mobileMenu.js"></script>
+  <script src="../../src/js/formValidation.js"></script>
+  <script src="../../src/js/newUserValidation.js"></script>
+</html>

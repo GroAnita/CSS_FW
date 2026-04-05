@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pink Club</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-pink-600 font-['Poppins']">
+    <header class="bg-pink-500 p-4">
+      <nav
+        class="container mx-auto flex justify-between items-center hidden md:flex"
+      >
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
+            ><span
+              class="text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+            >
+              Pink Club</span
+            ></a
+          >
+        </div>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-pink-50">Home</a></li>
+          <li>
+            <a href="profilePage.html" class="text-pink-50">Profile Page</a>
+          </li>
+          <li><a href="loggedinfeed.html" class="text-pink-50">Posts</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex justify-end">
+        <button id="menuButton" class="text-2xl text-pink-200 md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!--Mobile menu-->
+    <div
+      id="mobileMenu"
+      class="fixed top-0 left-0 z-50 flex hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-700/95 text-pink-100 md:hidden"
+    >
+      <button id="closeMobileMenu" class="absolute top-4 right-4 text-2xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a
+        href="#"
+        class="mt-12 text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+        >Pink Club</a
+      >
+      <a href="#" class="mt-8 text-2xl hover:underline">Home</a>
+      <a href="profilePage.html" class="text-2xl hover:underline"
+        >Profile Page</a
+      >
+      <a href="loggedinfeed.html" class="text-2xl hover:underline">Posts</a>
+      <a href="index.html" class="text-2xl hover:underline"> Log out </a>
+    </div>
+
+    <section class="container mx-auto my-8 p-4">
+      <h2
+        class="text-5xl font-['DynaPuff'] font-semibold text-pink-100 mb-4 text-center"
+      >
+        Posts!
+      </h2>
+      <hr class="border-pink-300 my-8" />
+      <div
+        class="flex flex-col md:flex-row gap-4 justify-between items-stretch md:items-center mb-6"
+      >
+        <input
+          type="text"
+          placeholder="Search posts..."
+          class="w-full md:w-1/2 p-2 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+        />
+        <div class="w-full md:w-48 relative">
+          <button
+            id="sortButton"
+            class="w-full md:w-48 flex justify-between items-center p-2 rounded border border-pink-300"
+          >
+            <span id="selectedOption" class="text-pink-200">Sort by</span>
+            <span class="text-pink-200">▼</span>
+          </button>
+          <div
+            id="dropDownMenu"
+            class="absolute left-0 mt-2 w-full md:w-48 bg-pink-100 border border-pink-300 rounded shadow-lg hidden z-10"
+          >
+            <button
+              class="block w-full text-left px-4 py-2 hover:bg-pink-200"
+              data-value="newest"
+            >
+              Newest
+            </button>
+            <button
+              class="block w-full text-left px-4 py-2 hover:bg-pink-200"
+              data-value="popular"
+            >
+              Most Popular
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
+      >
+        <div class="flex items-start gap-4 mb-2">
+          <img
+            src="https://images.unsplash.com/photo-1602033350291-a9ab8d800269?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Profile Picture"
+            class="w-10 h-10 rounded-full object-cover"
+          />
+          <div>
+            <p class="text-pink-100 font-semibold">Anna Vollaugen</p>
+            <p class="text-pink-100 text-xs">2 hours ago</p>
+          </div>
+          <div class="ml-auto">
+            <button
+              class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+            >
+              Follow
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1422205512921-12dac7b3b603?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Pink flowers by Tomoko Uji"
+              class="w-full h-48 object-cover rounded-lg mb-2"
+            />
+            <div class="flex justify-between items-center mb-2">
+              <p class="text-xs text-pink-100">
+                Photo by
+                <a
+                  href="https://unsplash.com/@ujitomo"
+                  target="_blank"
+                  class="underline"
+                >
+                  Kien Do
+                </a>
+                on
+                <a
+                  href="https://unsplash.com"
+                  target="_blank"
+                  class="underline"
+                >
+                  Unsplash
+                </a>
+              </p>
+              <div>
+                <button
+                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+                >
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <button
+                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
+                >
+                  <i class="fa-solid fa-comment"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold text-pink-100 mb-2">
+            Had the best time at the Pink Club event!
+          </h3>
+          <hr class="border-pink-300 my-2" />
+          <p class="text-pink-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
+      >
+        <div class="flex items-start gap-4 mb-2">
+          <img
+            src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Profile Picture"
+            class="w-10 h-10 rounded-full object-cover"
+          />
+          <div>
+            <p class="text-pink-100 font-semibold">Elisabeth Hollyday</p>
+            <p class="text-pink-100 text-xs">10 hours ago</p>
+          </div>
+          <div class="ml-auto">
+            <button
+              class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+            >
+              Follow
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1614766057193-b407080e2cdb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Pink flowers by Tomoko Uji"
+              class="w-full h-48 object-cover rounded-lg mb-2"
+            />
+            <div class="flex justify-between items-center mb-2">
+              <p class="text-xs text-pink-100">
+                Photo by
+                <a
+                  href="https://unsplash.com/@ujitomo"
+                  target="_blank"
+                  class="underline"
+                >
+                  Averie Woodard
+                </a>
+                on
+                <a
+                  href="https://unsplash.com"
+                  target="_blank"
+                  class="underline"
+                >
+                  Unsplash
+                </a>
+              </p>
+              <div>
+                <button
+                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+                >
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <button
+                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
+                >
+                  <i class="fa-solid fa-comment"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-pink-100 mb-2">
+              Looking forward to the Pink Club event!
+            </h3>
+            <p class="text-pink-100">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
+      >
+        <div class="flex items-start gap-4 mb-2">
+          <img
+            src="../images/megibunadlite.jpg"
+            alt="Profile Picture"
+            class="w-10 h-10 rounded-full object-cover"
+          />
+          <div>
+            <p class="text-pink-100 font-semibold">Gro Anita Brathen</p>
+            <p class="text-pink-100 text-xs">1 day ago</p>
+          </div>
+          <div class="ml-auto">
+            <button
+              class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+            >
+              Follow
+            </button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="../images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
+              alt="Pink flowers by Tomoko Uji"
+              class="w-full h-48 object-cover rounded-lg mb-2"
+            />
+            <div class="flex justify-between items-center mb-2">
+              <p class="text-xs text-pink-100">
+                Photo by
+                <a
+                  href="https://unsplash.com/@ujitomo"
+                  target="_blank"
+                  class="underline"
+                >
+                  Tomoko Uji
+                </a>
+                on
+                <a
+                  href="https://unsplash.com"
+                  target="_blank"
+                  class="underline"
+                >
+                  Unsplash
+                </a>
+              </p>
+              <div>
+                <button
+                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+                >
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <button
+                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
+                >
+                  <i class="fa-solid fa-comment"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold text-pink-100 mb-2">
+            I love pink flowers!
+          </h3>
+          <p class="text-pink-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="../../src/js/mobileMenu.js"></script>
+  <script>
+    const button = document.getElementById("sortButton");
+    const menu = document.getElementById("dropDownMenu");
+    const selected = document.getElementById("selectedOption");
+
+    button.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    // select option
+    menu.addEventListener("click", (e) => {
+      const option = e.target.closest("button");
+      if (!option) return;
+
+      selected.textContent = option.textContent;
+      menu.classList.add("hidden");
+    });
+
+    // close when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!button.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add("hidden");
+      }
+    });
+  </script>
+</html>
