@@ -9,12 +9,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../favicon-16x16.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
   </head>
   <body class="bg-pink-600 font-['Poppins']">
     <header class="bg-pink-500 p-4">
@@ -67,24 +93,169 @@
     </div>
 
     <section class="container mx-auto my-8 p-4">
-      <h2
-        class="text-5xl font-['DynaPuff'] font-semibold text-pink-100 mb-4 text-center"
-      >
-        Posts!
-      </h2>
+      <div class="relative">
+        <button
+          id="slideLeft"
+          class="hidden md:block absolute left-40 top-1/2 -translate-y-1/2 bg-pink-300 p-2 rounded-full shadow z-10"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <section
+          id="slider"
+          class="flex gap-4 overflow-x-auto scroll-smooth cursor-grab p-2 md:w-2/3 mx-auto no-scrollbar"
+        >
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExem4wMHc2OGd6MXVhZ3hrNHBmNmdwbmV5Y2JydXhnemp6M2dsbTg4diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OLqjG6j3XEOoDHpEG6/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Gro Anita Brathen</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXN3NmRqYXYyeWcwZTFwazM2aXg5OHczaTViMzRwY3o2bW5ibWZwZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AHWdLeFZj9gtO/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Pink Panther</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2NudXd0Y29kZzIwbWkweXg2b3dic21ld2R3emNna2l2Zm80dm1ueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eZrEGvQd0L9N0ueG7j/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >John Deer</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHZ2OTRuMHJsMHdvb2M1aWJqODlraWp3NjdrYWlqZGU4azZvNmdjYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ETpt1dBe0fK1yZwq9s/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Mr.Best</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXdlNG5ienlxemNpcnZncDRkMHh4ZHhjdm8yNnA4ZHo0MHg0MTBycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VCDW7Lu7GjqIaFNqJM/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Nidar Marsipan</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDgzMTBndzVwcGQ4MHcydDY3cmF4emdhbDVuMjYzYjk5ODFjOGdyMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTnqUxyWbsAXq7Ju/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Donald Duck</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExemp4bWk2d2owdWRoOXNsZHpoN3loNGJvaGNjMnJnZDdtc3Q3MnhodiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C5cDXxEgBGNjy/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Shari McCallum</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHFvM3ptc29hYThlNWtsemw0bzZ5bzBpcDNvaDdnZnA3NG5wemlydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S587HQ5XV2TTKvdm49/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Alex Aster</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXp1YjdjeG9nYzU1czVvc2F0YjR5YXk4N3hsM3o3MDcwZndheHA3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dGTofP3XvOSmfkkueE/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Harry Hole</span
+            >
+          </article>
+          <article
+            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+          >
+            <img
+              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW1pZGVhZWtwczlkZ29ocWp6dDdrc3BlbDR0eXJ3Z3pqYWszb3NreiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8A7pmGytPmqjbQBknE/giphy.gif"
+              alt="Profile Picture"
+              class="w-28 h-36 rounded-md object-cover"
+            />
+            <span
+              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+              >Anton Berg</span
+            >
+          </article>
+        </section>
+        <button
+          id="slideRight"
+          class="hidden md:block absolute right-40 top-1/2 -translate-y-1/2 bg-pink-300 p-2 rounded-full shadow z-10"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
       <hr class="border-pink-300 my-8" />
       <div
-        class="flex flex-col md:flex-row gap-4 justify-between items-stretch md:items-center mb-6"
+        class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-between items-stretch md:items-center mb-6"
       >
         <input
           type="text"
           placeholder="Search posts..."
-          class="w-full md:w-1/2 p-2 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+          class="md:col-start-2 w-full p-2 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
         />
-        <div class="w-full md:w-48 relative">
+        <div class="w-full md:w-48 relative items-end">
           <button
             id="sortButton"
-            class="w-full md:w-48 flex justify-between items-center p-2 rounded border border-pink-300"
+            class="w-full md:w-48 flex justify-between md:justify-self-end items-center p-2 rounded border border-pink-300"
           >
             <span id="selectedOption" class="text-pink-200">Sort by</span>
             <span class="text-pink-200">▼</span>
@@ -108,13 +279,36 @@
           </div>
         </div>
       </div>
+      <div
+        class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
+      >
+        <div class="flex flex-col items-start gap-4 mb-2">
+          <div class="flex items-center gap-2">
+            <img
+              src="../images/megibunadlite.jpg"
+              alt="Profile Picture"
+              class="w-10 h-10 rounded-full object-cover"
+            />
 
+            <p class="text-pink-100 font-semibold">Gro Anita Brathen</p>
+          </div>
+          <div class="w-full">
+            <button
+              id="makeNewPost"
+              type="button"
+              class="w-full p-2 rounded border font-['DynaPuff'] bg-pink-100 text-pink-700 border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            >
+              Make a new post...
+            </button>
+          </div>
+        </div>
+      </div>
       <div
         class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
       >
         <div class="flex items-start gap-4 mb-2">
           <img
-            src="https://images.unsplash.com/photo-1602033350291-a9ab8d800269?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="../images/megibunadlite.jpg"
             alt="Profile Picture"
             class="w-10 h-10 rounded-full object-cover"
           />
@@ -263,12 +457,30 @@
             <p class="text-pink-100 font-semibold">Gro Anita Brathen</p>
             <p class="text-pink-100 text-xs">1 day ago</p>
           </div>
-          <div class="ml-auto">
+          <div class="ml-auto relative">
             <button
-              class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+              id="editButton"
+              class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition relative"
             >
-              Follow
+              ...
             </button>
+            <div
+              id="dropDownMenu"
+              class="absolute right-0 top-4 mt-2 w-full md:w-32 bg-pink-100 border border-pink-300 rounded shadow-lg hidden z-10"
+            >
+              <button
+                class="block w-full text-left px-4 py-2 hover:bg-pink-200"
+                data-value="edit"
+              >
+                Edit
+              </button>
+              <button
+                class="block w-full text-left px-4 py-2 hover:bg-pink-200"
+                data-value="delete"
+              >
+                Delete
+              </button>
+            </div>
           </div>
         </div>
         <div>
@@ -347,5 +559,21 @@
         menu.classList.add("hidden");
       }
     });
+
+    const editButton = document.getElementById("editButton");
+    const editMenu = editButton.nextElementSibling;
+
+    editButton.addEventListener("click", () => {
+      editMenu.classList.toggle("hidden");
+    });
+
+    // close when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!editButton.contains(e.target) && !editMenu.contains(e.target)) {
+        editMenu.classList.add("hidden");
+      }
+    });
   </script>
+  <script src="../../src/js/newPostModal.js"></script>
+  <script src="../../src/js/slider.js"></script>
 </html>
