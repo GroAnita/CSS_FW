@@ -34,7 +34,8 @@ function validateLoginForm() {
       if (successMessage) successMessage.classList.remove("hidden");
       form.querySelector("button").disabled = true;
       setTimeout(() => {
-        window.location.href = "../profile/index.html";
+        const base = window.location.pathname.split("/")[1];
+        window.location.href = `/${base}/profile/index.html`;
       }, 1500);
     }
   });
