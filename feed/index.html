@@ -45,7 +45,7 @@
   <body class="bg-pink-600 font-['Poppins']">
     <header class="bg-pink-500 p-4">
       <nav
-        class="container mx-auto flex justify-between items-center hidden md:flex"
+        class="container mx-auto justify-between items-center hidden md:flex"
       >
         <div class="flex justify-between items-center">
           <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
@@ -57,14 +57,25 @@
           >
         </div>
         <ul class="flex space-x-4">
-          <li><a href="#" class="text-pink-50">Home</a></li>
+          <li><a href="../index.html" class="text-pink-50">Log out</a></li>
           <li>
-            <a href="profilePage.html" class="text-pink-50">Profile Page</a>
+            <a href="../profile/index.html" class="text-pink-50"
+              >Profile Page</a
+            >
           </li>
-          <li><a href="loggedinfeed.html" class="text-pink-50">Posts</a></li>
+          <li><a href="../feed/index.html" class="text-pink-50">Posts</a></li>
         </ul>
       </nav>
+   
 
+      <div class="flex items-center justify-between md:hidden">
+        <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
+          ><span
+            class="text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+          >
+            Pink Club</span
+          ></a
+        >
       <div class="flex justify-end">
         <button id="menuButton" class="text-2xl text-pink-200 md:hidden">
           <i class="fa-solid fa-bars"></i>
@@ -74,7 +85,7 @@
     <!--Mobile menu-->
     <div
       id="mobileMenu"
-      class="fixed top-0 left-0 z-50 flex hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-700/95 text-pink-100 md:hidden"
+      class="fixed top-0 left-0 z-50 hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-700/95 text-pink-100 md:hidden"
     >
       <button id="closeMobileMenu" class="absolute top-4 right-4 text-2xl">
         <i class="fa-solid fa-xmark"></i>
@@ -84,12 +95,12 @@
         class="mt-12 text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
         >Pink Club</a
       >
-      <a href="#" class="mt-8 text-2xl hover:underline">Home</a>
-      <a href="profilePage.html" class="text-2xl hover:underline"
+      <a href="../feed/index.html" class="mt-8 text-2xl hover:underline">Home</a>
+      <a href="../profile/index.html" class="text-2xl hover:underline"
         >Profile Page</a
       >
-      <a href="loggedinfeed.html" class="text-2xl hover:underline">Posts</a>
-      <a href="index.html" class="text-2xl hover:underline"> Log out </a>
+      <a href="../feed/index.html" class="text-2xl hover:underline">Posts</a>
+      <a href="../index.html" class="text-2xl hover:underline"> Log out </a>
     </div>
 
     <section class="container mx-auto my-8 p-4">
@@ -100,6 +111,7 @@
         >
           <i class="fa-solid fa-arrow-left"></i>
         </button>
+        <!-- a fake reel, its only images to simulate a reel, like what it could look like -->
         <section
           id="slider"
           class="flex gap-4 overflow-x-auto scroll-smooth cursor-grab p-2 md:w-2/3 mx-auto no-scrollbar"
@@ -108,9 +120,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExem4wMHc2OGd6MXVhZ3hrNHBmNmdwbmV5Y2JydXhnemp6M2dsbTg4diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OLqjG6j3XEOoDHpEG6/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1498842965061-82d264217c5f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -121,9 +133,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXN3NmRqYXYyeWcwZTFwazM2aXg5OHczaTViMzRwY3o2bW5ibWZwZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AHWdLeFZj9gtO/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1746802423700-d85a98012dec?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -134,9 +146,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2NudXd0Y29kZzIwbWkweXg2b3dic21ld2R3emNna2l2Zm80dm1ueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eZrEGvQd0L9N0ueG7j/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1614977645540-7abd88ba8e56?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -147,9 +159,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHZ2OTRuMHJsMHdvb2M1aWJqODlraWp3NjdrYWlqZGU4azZvNmdjYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ETpt1dBe0fK1yZwq9s/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1667753147067-87f4b81179c1?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -160,9 +172,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXdlNG5ienlxemNpcnZncDRkMHh4ZHhjdm8yNnA4ZHo0MHg0MTBycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VCDW7Lu7GjqIaFNqJM/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1582176604856-e824b4736522?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -173,9 +185,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDgzMTBndzVwcGQ4MHcydDY3cmF4emdhbDVuMjYzYjk5ODFjOGdyMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTnqUxyWbsAXq7Ju/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1465153690352-10c1b29577f8?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -186,9 +198,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExemp4bWk2d2owdWRoOXNsZHpoN3loNGJvaGNjMnJnZDdtc3Q3MnhodiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C5cDXxEgBGNjy/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1593179449458-e0d43d512551?q=80&w=682&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -199,9 +211,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHFvM3ptc29hYThlNWtsemw0bzZ5bzBpcDNvaDdnZnA3NG5wemlydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S587HQ5XV2TTKvdm49/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -212,9 +224,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXp1YjdjeG9nYzU1czVvc2F0YjR5YXk4N3hsM3o3MDcwZndheHA3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dGTofP3XvOSmfkkueE/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1697301439928-7c60326ff1ea?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -225,9 +237,9 @@
             class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
           >
             <img
-              src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW1pZGVhZWtwczlkZ29ocWp6dDdrc3BlbDR0eXJ3Z3pqYWszb3NreiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8A7pmGytPmqjbQBknE/giphy.gif"
-              alt="Profile Picture"
-              class="w-28 h-36 rounded-md object-cover"
+              src="https://images.unsplash.com/photo-1581798269145-7512508289b9?q=80&w=852&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="reel picture"
+              class="w-full h-full rounded-md object-cover"
             />
             <span
               class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
@@ -285,7 +297,7 @@
         <div class="flex flex-col items-start gap-4 mb-2">
           <div class="flex items-center gap-2">
             <img
-              src="../images/megibunadlite.jpg"
+              src="../src/images/megibunadlite.jpg"
               alt="Profile Picture"
               class="w-10 h-10 rounded-full object-cover"
             />
@@ -308,7 +320,7 @@
       >
         <div class="flex items-start gap-4 mb-2">
           <img
-            src="../images/megibunadlite.jpg"
+            src="../src/images/megibunadlite.jpg"
             alt="Profile Picture"
             class="w-10 h-10 rounded-full object-cover"
           />
@@ -320,7 +332,7 @@
             <button
               class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
             >
-              Follow
+              Followed
             </button>
           </div>
         </div>
@@ -449,7 +461,7 @@
       >
         <div class="flex items-start gap-4 mb-2">
           <img
-            src="../images/megibunadlite.jpg"
+            src="../src/images/megibunadlite.jpg"
             alt="Profile Picture"
             class="w-10 h-10 rounded-full object-cover"
           />
@@ -486,7 +498,7 @@
         <div>
           <div>
             <img
-              src="../images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
+              src="../src/images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
               alt="Pink flowers by Tomoko Uji"
               class="w-full h-48 object-cover rounded-lg mb-2"
             />

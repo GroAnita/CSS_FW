@@ -4,7 +4,7 @@ function newPostModal() {
       >
         <div class="flex items-start gap-4 mb-2">
           <img
-            src="../images/megibunadlite.jpg"
+            src="../src/images/megibunadlite.jpg"
             alt="Profile Picture"
             class="w-10 h-10 rounded-full object-cover"
           />

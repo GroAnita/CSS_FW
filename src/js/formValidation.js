@@ -2,10 +2,16 @@ function validateLoginForm() {
   const form = document.getElementById("loginForm");
   const usernameInput = document.getElementById("username");
   const passwordInput = document.getElementById("password");
+  const confirmPasswordInput = document.getElementById("confirmPassword");
   const errorMessage = document.getElementById("errorMessage");
+  const successMessage = document.getElementById("successMessage");
   console.log("Form validation script loaded");
 
-  if (!form) return; //
+  if (!form) return;
+
+  // This validator is for the frontpage login page only.
+  // Registration has a confirm password field and its own validation script.
+  if (confirmPasswordInput) return;
 
   form.addEventListener("submit", (e) => {
     console.log("Form submitted");
@@ -20,15 +26,15 @@ function validateLoginForm() {
 
     if (username !== "admin" || password !== "password123") {
       errorMessage.classList.remove("hidden");
-      successMessage.classList.add("hidden");
+      if (successMessage) successMessage.classList.add("hidden");
       usernameInput.classList.add("border-pink-900");
       passwordInput.classList.add("border-pink-900");
     } else {
       errorMessage.classList.add("hidden");
-      successMessage.classList.remove("hidden");
+      if (successMessage) successMessage.classList.remove("hidden");
       form.querySelector("button").disabled = true;
       setTimeout(() => {
-        window.location.href = "src/pages/profilePage.html";
+        window.location.href = "../../profile/index.html";
       }, 1500);
     }
   });

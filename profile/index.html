@@ -36,7 +36,7 @@
   <body class="bg-pink-600 font-['Poppins']">
     <header class="bg-pink-500 p-4">
       <nav
-        class="container mx-auto flex justify-between items-center hidden md:flex"
+        class="container mx-auto justify-between items-center hidden md:flex"
       >
         <div class="flex justify-between items-center">
           <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
@@ -48,39 +48,51 @@
           >
         </div>
         <ul class="flex space-x-4">
-          <li><a href="#" class="text-pink-50">Home</a></li>
+          <li><a href="../feed/index.html" class="text-pink-50">Home</a></li>
           <li>
-            <a href="profilePage.html" class="text-pink-50">Profile Page</a>
+            <a href="../profile/index.html" class="text-pink-50"
+              >Profile Page</a
+            >
           </li>
-          <li><a href="loggedinfeed.html" class="text-pink-50">Posts</a></li>
+          <li><a href="../feed/index.html" class="text-pink-50">Posts</a></li>
         </ul>
       </nav>
-
+<div class="flex items-center justify-between md:hidden">
+        <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
+          ><span
+            class="text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+          >
+            Pink Club</span
+          ></a
+        >
       <div class="flex justify-end">
         <button id="menuButton" class="text-2xl text-pink-200 md:hidden">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
+     
     </header>
     <!--Mobile menu-->
     <div
       id="mobileMenu"
-      class="fixed top-0 left-0 z-50 flex hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-700/95 text-pink-100 md:hidden"
+      class="fixed top-0 left-0 z-50 hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-700/95 text-pink-100 md:hidden"
     >
       <button id="closeMobileMenu" class="absolute top-4 right-4 text-2xl">
         <i class="fa-solid fa-xmark"></i>
       </button>
       <a
-        href="#"
+        href="../feed/index.html"
         class="mt-12 text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
         >Pink Club</a
       >
-      <a href="#" class="mt-8 text-2xl hover:underline">Home</a>
-      <a href="profilePage.html" class="text-2xl hover:underline"
+      <a href="../feed/index.html" class="mt-8 text-2xl hover:underline"
+        >Home</a
+      >
+      <a href="../profile/index.html" class="text-2xl hover:underline"
         >Profile Page</a
       >
-      <a href="loggedinfeed.html" class="text-2xl hover:underline">Posts</a>
-      <a href="index.html" class="text-2xl hover:underline"> Log out </a>
+      <a href="../feed/index.html" class="text-2xl hover:underline">Posts</a>
+      <a href="../index.html" class="text-2xl hover:underline"> Log out </a>
     </div>
 
     <section
@@ -91,7 +103,7 @@
           class="absolute -top-10 left-1/2 -translate-x-1/2 md:left-10 md:translate-x-0"
         >
           <img
-            src="../images/megibunadlite.jpg"
+            src="../src/images/megibunadlite.jpg"
             alt="Profile Picture"
             class="md:w-32 md:h-32 w-28 h-28 rounded-full object-cover mx-auto border-4 border-pink-100"
           />
@@ -180,7 +192,7 @@
       >
         <div class="flex items-start gap-4 mb-2">
           <img
-            src="../images/megibunadlite.jpg"
+            src="../src/images/megibunadlite.jpg"
             alt="Profile Picture"
             class="w-10 h-10 rounded-full object-cover"
           />
@@ -192,7 +204,7 @@
         <div>
           <div>
             <img
-              src="../images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
+              src="../src/images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
               alt="Pink flowers by Tomoko Uji"
               class="w-full h-48 object-cover rounded-lg mb-2"
             />
@@ -226,7 +238,7 @@
       >
         <div class="flex items-start gap-4 mb-2">
           <img
-            src="../images/megibunadlite.jpg"
+            src="../src/images/megibunadlite.jpg"
             alt="Profile Picture"
             class="w-10 h-10 rounded-full object-cover"
           />
@@ -238,7 +250,7 @@
         <div>
           <div>
             <img
-              src="../images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
+              src="../src/images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
               alt="Pink flowers by Tomoko Uji"
               class="w-full h-48 object-cover rounded-lg mb-2"
             />
@@ -272,7 +284,7 @@
       >
         <div class="flex items-start gap-4 mb-2">
           <img
-            src="../images/megibunadlite.jpg"
+            src="../src/images/megibunadlite.jpg"
             alt="Profile Picture"
             class="w-10 h-10 rounded-full object-cover"
           />
@@ -284,7 +296,7 @@
         <div>
           <div>
             <img
-              src="../images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
+              src="../src/images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
               alt="Pink flowers by Tomoko Uji"
               class="w-full h-48 object-cover rounded-lg mb-2"
             />
