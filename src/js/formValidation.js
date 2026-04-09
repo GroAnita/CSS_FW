@@ -34,7 +34,7 @@ function validateLoginForm() {
       if (successMessage) successMessage.classList.remove("hidden");
       form.querySelector("button").disabled = true;
       setTimeout(() => {
-        window.location.href = "../../profile/index.html";
+        window.location.href = "../profile/index.html";
       }, 1500);
     }
   });
