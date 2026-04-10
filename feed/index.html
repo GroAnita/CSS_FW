@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pink Club</title>
+    <meta
+      name="description"
+      content="Welcome to Pink Club, your ultimate destination for all things pink! Join our vibrant community to share your love for pink fashion, decor, and lifestyle. Connect with fellow pink enthusiasts, discover the latest trends, and celebrate the beauty of pink in every aspect of life. Whether you're a fan of pastel pinks or bold magentas, Pink Club is the perfect place to express your passion for this iconic color. Join us today and immerse yourself in a world of pink perfection!"
+    />
+    <title>Pink Club Feed</title>
     <link rel="stylesheet" href="../dist/output.css" />
     <link
       rel="stylesheet"
@@ -66,7 +70,6 @@
           <li><a href="../feed/index.html" class="text-pink-50">Posts</a></li>
         </ul>
       </nav>
-   
 
       <div class="flex items-center justify-between md:hidden">
         <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
@@ -76,513 +79,604 @@
             Pink Club</span
           ></a
         >
-      <div class="flex justify-end">
-        <button id="menuButton" class="text-2xl text-pink-200 md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <div class="flex justify-end">
+          <button
+            id="menuButton"
+            aria-label="Open mobile menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            class="text-2xl text-pink-200 md:hidden"
+          >
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
     </header>
     <!--Mobile menu-->
     <div
       id="mobileMenu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile nav"
       class="fixed top-0 left-0 z-50 hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-700/95 text-pink-100 md:hidden"
     >
-      <button id="closeMobileMenu" class="absolute top-4 right-4 text-2xl">
-        <i class="fa-solid fa-xmark"></i>
+      <button
+        id="closeMobileMenu"
+        class="absolute top-4 right-4 text-2xl"
+        aria-label="Close mobile menu"
+      >
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
       </button>
       <a
         href="#"
         class="mt-12 text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
         >Pink Club</a
       >
-      <a href="../feed/index.html" class="mt-8 text-2xl hover:underline">Home</a>
+      <a href="../feed/index.html" class="mt-8 text-2xl hover:underline"
+        >Home</a
+      >
       <a href="../profile/index.html" class="text-2xl hover:underline"
         >Profile Page</a
       >
       <a href="../feed/index.html" class="text-2xl hover:underline">Posts</a>
       <a href="../index.html" class="text-2xl hover:underline"> Log out </a>
     </div>
-
-    <section class="container mx-auto my-8 p-4">
-      <div class="relative">
-        <button
-          id="slideLeft"
-          class="hidden md:block absolute left-40 top-1/2 -translate-y-1/2 bg-pink-300 p-2 rounded-full shadow z-10"
-        >
-          <i class="fa-solid fa-arrow-left"></i>
-        </button>
-        <!-- a fake reel, its only images to simulate a reel, like what it could look like -->
-        <section
-          id="slider"
-          class="flex gap-4 overflow-x-auto scroll-smooth cursor-grab p-2 md:w-2/3 mx-auto no-scrollbar"
-        >
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1498842965061-82d264217c5f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Gro Anita Brathen</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1746802423700-d85a98012dec?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Pink Panther</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1614977645540-7abd88ba8e56?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >John Deer</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1667753147067-87f4b81179c1?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Mr.Best</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1582176604856-e824b4736522?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Nidar Marsipan</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1465153690352-10c1b29577f8?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Donald Duck</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1593179449458-e0d43d512551?q=80&w=682&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Shari McCallum</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Alex Aster</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1697301439928-7c60326ff1ea?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Harry Hole</span
-            >
-          </article>
-          <article
-            class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1581798269145-7512508289b9?q=80&w=852&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="reel picture"
-              class="w-full h-full rounded-md object-cover"
-            />
-            <span
-              class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
-              >Anton Berg</span
-            >
-          </article>
-        </section>
-        <button
-          id="slideRight"
-          class="hidden md:block absolute right-40 top-1/2 -translate-y-1/2 bg-pink-300 p-2 rounded-full shadow z-10"
-        >
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <hr class="border-pink-300 my-8" />
-      <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-between items-stretch md:items-center mb-6"
-      >
-        <input
-          type="text"
-          placeholder="Search posts..."
-          class="md:col-start-2 w-full p-2 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
-        />
-        <div class="w-full md:w-48 relative items-end">
+    <main>
+      <h1 class="sr-only">Pink Club Feed</h1>
+      <section class="container mx-auto my-8 p-4">
+        <div class="relative">
           <button
-            id="sortButton"
-            class="w-full md:w-48 flex justify-between md:justify-self-end items-center p-2 rounded border border-pink-300"
+            id="slideLeft"
+            class="hidden md:block absolute left-40 top-1/2 -translate-y-1/2 bg-pink-300 p-2 rounded-full shadow z-10"
+            aria-label="Scroll left"
           >
-            <span id="selectedOption" class="text-pink-200">Sort by</span>
-            <span class="text-pink-200">▼</span>
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
           </button>
-          <div
-            id="dropDownMenu"
-            class="absolute left-0 mt-2 w-full md:w-48 bg-pink-100 border border-pink-300 rounded shadow-lg hidden z-10"
+          <!-- a fake reel, its only images to simulate a reel, like what it could look like -->
+          <section
+            id="slider"
+            role="region"
+            aria-label="stories slider"
+            tabindex="0"
+            class="flex gap-4 overflow-x-auto scroll-smooth cursor-grab p-2 md:w-2/3 mx-auto no-scrollbar"
           >
-            <button
-              class="block w-full text-left px-4 py-2 hover:bg-pink-200"
-              data-value="newest"
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
             >
-              Newest
-            </button>
-            <button
-              class="block w-full text-left px-4 py-2 hover:bg-pink-200"
-              data-value="popular"
+              <img
+                src="https://images.unsplash.com/photo-1498842965061-82d264217c5f?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Gro Anita Brathen</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
             >
-              Most Popular
-            </button>
-          </div>
+              <img
+                src="https://images.unsplash.com/photo-1746802423700-d85a98012dec?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Pink Panther</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1614977645540-7abd88ba8e56?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >John Deer</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1667753147067-87f4b81179c1?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Mr.Best</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1582176604856-e824b4736522?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Nidar Marsipan</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1465153690352-10c1b29577f8?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Donald Duck</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1593179449458-e0d43d512551?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Shari McCallum</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Alex Aster</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1697301439928-7c60326ff1ea?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Harry Hole</span
+              >
+            </article>
+            <article
+              class="bg-pink-500 rounded-lg shadow-md mb-4 flex flex-col w-28 h-36 mx-auto border-4 border-pink-300 flex-shrink-0 relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1581798269145-7512508289b9?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="reel picture"
+                class="w-full h-full rounded-md object-cover"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <span
+                class="text-pink-100 text-center mt-2 text-[8px] absolute bottom-0 left-1/2 -translate-x-1/2 bg-pink-700 px-1 rounded opacity-80"
+                >Anton Berg</span
+              >
+            </article>
+          </section>
+          <button
+            id="slideRight"
+            aria-label="Scroll right"
+            class="hidden md:block absolute right-40 top-1/2 -translate-y-1/2 bg-pink-300 p-2 rounded-full shadow z-10"
+          >
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
         </div>
-      </div>
-      <div
-        class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
-      >
-        <div class="flex flex-col items-start gap-4 mb-2">
-          <div class="flex items-center gap-2">
-            <img
-              src="../src/images/megibunadlite.jpg"
-              alt="Profile Picture"
-              class="w-10 h-10 rounded-full object-cover"
-            />
 
-            <p class="text-pink-100 font-semibold">Gro Anita Brathen</p>
-          </div>
-          <div class="w-full">
-            <button
-              id="makeNewPost"
-              type="button"
-              class="w-full p-2 rounded border font-['DynaPuff'] bg-pink-100 text-pink-700 border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
-            >
-              Make a new post...
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
-      >
-        <div class="flex items-start gap-4 mb-2">
-          <img
-            src="../src/images/megibunadlite.jpg"
-            alt="Profile Picture"
-            class="w-10 h-10 rounded-full object-cover"
+        <hr class="border-pink-300 my-8" />
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-between items-stretch md:items-center mb-6"
+        >
+          <label for="search" class="sr-only">Search posts</label>
+          <input
+            type="text"
+            id="searchPosts"
+            aria-label="Search posts"
+            placeholder="Search posts..."
+            class="md:col-start-2 w-full p-2 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
           />
-          <div>
-            <p class="text-pink-100 font-semibold">Anna Vollaugen</p>
-            <p class="text-pink-100 text-xs">2 hours ago</p>
-          </div>
-          <div class="ml-auto">
+          <div class="w-full md:w-48 relative items-end">
             <button
-              class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+              id="sortButton"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropDownMenu"
+              class="w-full md:w-48 flex justify-between md:justify-self-end items-center p-2 rounded border border-pink-300"
             >
-              Followed
+              <span id="selectedOption" class="text-pink-200">Sort by</span>
+              <span class="text-pink-200">▼</span>
             </button>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1422205512921-12dac7b3b603?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Pink flowers by Tomoko Uji"
-              class="w-full h-48 object-cover rounded-lg mb-2"
-            />
-            <div class="flex justify-between items-center mb-2">
-              <p class="text-xs text-pink-100">
-                Photo by
-                <a
-                  href="https://unsplash.com/@ujitomo"
-                  target="_blank"
-                  class="underline"
-                >
-                  Kien Do
-                </a>
-                on
-                <a
-                  href="https://unsplash.com"
-                  target="_blank"
-                  class="underline"
-                >
-                  Unsplash
-                </a>
-              </p>
-              <div>
-                <button
-                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
-                >
-                  <i class="fa-solid fa-thumbs-up"></i>
-                </button>
-                <button
-                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
-                >
-                  <i class="fa-solid fa-comment"></i>
-                </button>
-              </div>
+            <div
+              id="dropDownMenu"
+              role="menu"
+              aria-labelledby="sortButton"
+              class="absolute left-0 mt-2 w-full md:w-48 bg-pink-100 border border-pink-300 rounded shadow-lg hidden z-10"
+            >
+              <button
+                class="block w-full text-left px-4 py-2 hover:bg-pink-200"
+                data-value="newest"
+                aria-label="Sort by newest"
+              >
+                Newest
+              </button>
+              <button
+                class="block w-full text-left px-4 py-2 hover:bg-pink-200"
+                data-value="popular"
+                aria-label="Sort by most popular"
+              >
+                Most Popular
+              </button>
             </div>
           </div>
-          <h3 class="text-xl font-semibold text-pink-100 mb-2">
-            Had the best time at the Pink Club event!
-          </h3>
-          <hr class="border-pink-300 my-2" />
-          <p class="text-pink-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
         </div>
-      </div>
-      <div
-        class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
-      >
-        <div class="flex items-start gap-4 mb-2">
-          <img
-            src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Profile Picture"
-            class="w-10 h-10 rounded-full object-cover"
-          />
-          <div>
-            <p class="text-pink-100 font-semibold">Elisabeth Hollyday</p>
-            <p class="text-pink-100 text-xs">10 hours ago</p>
+        <article
+          class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
+        >
+          <div class="flex flex-col items-start gap-4 mb-2">
+            <div class="flex items-center gap-2">
+              <img
+                src="../src/images/megibunadlite.jpg"
+                alt="Profile Picture of Gro Anita Brathen"
+                class="w-10 h-10 rounded-full object-cover"
+              />
+
+              <p class="text-pink-100 font-semibold">Gro Anita Brathen</p>
+            </div>
+            <div class="w-full">
+              <button
+                id="makeNewPost"
+                type="button"
+                aria-label="Make a new post"
+                class="w-full p-2 rounded border font-['DynaPuff'] bg-pink-100 text-pink-700 border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              >
+                Make a new post...
+              </button>
+            </div>
           </div>
-          <div class="ml-auto">
-            <button
-              class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
-            >
-              Follow
-            </button>
-          </div>
-        </div>
-        <div>
-          <div>
+        </article>
+        <article
+          class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
+        >
+          <div class="flex items-start gap-4 mb-2">
             <img
-              src="https://images.unsplash.com/photo-1614766057193-b407080e2cdb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Pink flowers by Tomoko Uji"
-              class="w-full h-48 object-cover rounded-lg mb-2"
+              src="../src/images/megibunadlite.jpg"
+              alt="Profile Picture of Anna Vollaugen"
+              class="w-10 h-10 rounded-full object-cover"
             />
-            <div class="flex justify-between items-center mb-2">
-              <p class="text-xs text-pink-100">
-                Photo by
-                <a
-                  href="https://unsplash.com/@ujitomo"
-                  target="_blank"
-                  class="underline"
-                >
-                  Averie Woodard
-                </a>
-                on
-                <a
-                  href="https://unsplash.com"
-                  target="_blank"
-                  class="underline"
-                >
-                  Unsplash
-                </a>
-              </p>
-              <div>
-                <button
-                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
-                >
-                  <i class="fa-solid fa-thumbs-up"></i>
-                </button>
-                <button
-                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
-                >
-                  <i class="fa-solid fa-comment"></i>
-                </button>
+            <div>
+              <p class="text-pink-100 font-semibold">Anna Vollaugen</p>
+              <p class="text-pink-100 text-xs">2 hours ago</p>
+            </div>
+            <div class="ml-auto">
+              <button
+                class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+                aria-label="Followed"
+              >
+                Followed
+              </button>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1422205512921-12dac7b3b603?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Pink flowers by Tomoko Uji"
+                class="w-full h-48 object-cover rounded-lg mb-2"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <div class="flex justify-between items-center mb-2">
+                <p class="text-xs text-pink-100">
+                  Photo by
+                  <a
+                    href="https://unsplash.com/@ujitomo"
+                    target="_blank"
+                    class="underline"
+                  >
+                    Kien Do
+                  </a>
+                  on
+                  <a
+                    href="https://unsplash.com"
+                    target="_blank"
+                    class="underline"
+                  >
+                    Unsplash
+                  </a>
+                </p>
+                <div>
+                  <button
+                    aria-label="Like post"
+                    class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+                  >
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </button>
+                  <button
+                    aria-label="Comment on post"
+                    class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
+                  >
+                    <i class="fa-solid fa-comment"></i>
+                  </button>
+                </div>
               </div>
             </div>
             <h3 class="text-xl font-semibold text-pink-100 mb-2">
-              Looking forward to the Pink Club event!
+              Had the best time at the Pink Club event!
+            </h3>
+            <hr class="border-pink-300 my-2" />
+            <p class="text-pink-100">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </article>
+        <article
+          class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
+        >
+          <div class="flex items-start gap-4 mb-2">
+            <img
+              src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Profile Picture of Elisabeth Hollyday"
+              class="w-10 h-10 rounded-full object-cover"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+            <div>
+              <p class="text-pink-100 font-semibold">Elisabeth Hollyday</p>
+              <p class="text-pink-100 text-xs">10 hours ago</p>
+            </div>
+            <div class="ml-auto">
+              <button
+                class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+                aria-label="Follow"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1614766057193-b407080e2cdb?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Pink flowers by Tomoko Uji"
+                class="w-full h-48 object-cover rounded-lg mb-2"
+                loading="lazy"
+                width="400"
+                height="200"
+              />
+              <div class="flex justify-between items-center mb-2">
+                <p class="text-xs text-pink-100">
+                  Photo by
+                  <a
+                    href="https://unsplash.com/@ujitomo"
+                    target="_blank"
+                    class="underline"
+                  >
+                    Averie Woodard
+                  </a>
+                  on
+                  <a
+                    href="https://unsplash.com"
+                    target="_blank"
+                    class="underline"
+                  >
+                    Unsplash
+                  </a>
+                </p>
+                <div>
+                  <button
+                    class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+                  >
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </button>
+                  <button
+                    aria-label="Comment on post"
+                    class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
+                  >
+                    <i class="fa-solid fa-comment"></i>
+                  </button>
+                </div>
+              </div>
+              <h3 class="text-xl font-semibold text-pink-100 mb-2">
+                Looking forward to the Pink Club event!
+              </h3>
+              <p class="text-pink-100">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article
+          class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
+        >
+          <div class="flex items-start gap-4 mb-2">
+            <img
+              src="../src/images/megibunadlite.jpg"
+              alt="Profile Picture of Gro Anita Brathen "
+              class="w-10 h-10 rounded-full object-cover"
+            />
+            <div>
+              <p class="text-pink-100 font-semibold">Gro Anita Brathen</p>
+              <p class="text-pink-100 text-xs">1 day ago</p>
+            </div>
+            <div class="ml-auto relative">
+              <button
+                id="editButton"
+                aria-label="Edit post options"
+                aria-expanded="false"
+                aria-controls="post-menu-1"
+                class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition relative"
+              >
+                ...
+              </button>
+              <div
+                id="dropDownMenu"
+                role="menu"
+                class="absolute right-0 top-4 mt-2 w-full md:w-32 bg-pink-100 border border-pink-300 rounded shadow-lg hidden z-10"
+              >
+                <button
+                  class="block w-full text-left px-4 py-2 hover:bg-pink-200"
+                  data-value="edit"
+                  aria-label="Edit post"
+                >
+                  Edit
+                </button>
+                <button
+                  class="block w-full text-left px-4 py-2 hover:bg-pink-200"
+                  data-value="delete"
+                  aria-label="Delete post"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="../src/images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
+                alt="Pink flowers by Tomoko Uji"
+                loading="lazy"
+                width="400"
+                height="200"
+                class="w-full h-48 object-cover rounded-lg mb-2"
+              />
+              <div class="flex justify-between items-center mb-2">
+                <p class="text-xs text-pink-100">
+                  Photo by
+                  <a
+                    href="https://unsplash.com/@ujitomo"
+                    target="_blank"
+                    class="underline"
+                  >
+                    Tomoko Uji
+                  </a>
+                  on
+                  <a
+                    href="https://unsplash.com"
+                    target="_blank"
+                    class="underline"
+                  >
+                    Unsplash
+                  </a>
+                </p>
+                <div>
+                  <button
+                    class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
+                    aria-label="Like post"
+                  >
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </button>
+                  <button
+                    class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
+                    aria-label="Comment on post"
+                  >
+                    <i class="fa-solid fa-comment"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-pink-100 mb-2">
+              I love pink flowers!
             </h3>
             <p class="text-pink-100">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-        </div>
-      </div>
-      <div
-        class="bg-pink-500 p-4 rounded-lg shadow-md mb-4 flex flex-col w-full md:w-1/3 mx-auto border-4 border-pink-300"
-      >
-        <div class="flex items-start gap-4 mb-2">
-          <img
-            src="../src/images/megibunadlite.jpg"
-            alt="Profile Picture"
-            class="w-10 h-10 rounded-full object-cover"
-          />
-          <div>
-            <p class="text-pink-100 font-semibold">Gro Anita Brathen</p>
-            <p class="text-pink-100 text-xs">1 day ago</p>
-          </div>
-          <div class="ml-auto relative">
-            <button
-              id="editButton"
-              class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition relative"
-            >
-              ...
-            </button>
-            <div
-              id="dropDownMenu"
-              class="absolute right-0 top-4 mt-2 w-full md:w-32 bg-pink-100 border border-pink-300 rounded shadow-lg hidden z-10"
-            >
-              <button
-                class="block w-full text-left px-4 py-2 hover:bg-pink-200"
-                data-value="edit"
-              >
-                Edit
-              </button>
-              <button
-                class="block w-full text-left px-4 py-2 hover:bg-pink-200"
-                data-value="delete"
-              >
-                Delete
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="../src/images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg"
-              alt="Pink flowers by Tomoko Uji"
-              class="w-full h-48 object-cover rounded-lg mb-2"
-            />
-            <div class="flex justify-between items-center mb-2">
-              <p class="text-xs text-pink-100">
-                Photo by
-                <a
-                  href="https://unsplash.com/@ujitomo"
-                  target="_blank"
-                  class="underline"
-                >
-                  Tomoko Uji
-                </a>
-                on
-                <a
-                  href="https://unsplash.com"
-                  target="_blank"
-                  class="underline"
-                >
-                  Unsplash
-                </a>
-              </p>
-              <div>
-                <button
-                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition"
-                >
-                  <i class="fa-solid fa-thumbs-up"></i>
-                </button>
-                <button
-                  class="text-pink-100 bg-pink-700 px-3 py-1 rounded-full text-sm hover:bg-pink-600 transition ml-2"
-                >
-                  <i class="fa-solid fa-comment"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <h3 class="text-xl font-semibold text-pink-100 mb-2">
-            I love pink flowers!
-          </h3>
-          <p class="text-pink-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </section>
+        </article>
+      </section>
+    </main>
   </body>
   <script src="../src/js/mobileMenu.js"></script>
   <script>
-    const button = document.getElementById("sortButton");
-    const menu = document.getElementById("dropDownMenu");
-    const selected = document.getElementById("selectedOption");
+    const button = document.getElementById('sortButton');
+    const menu = document.getElementById('dropDownMenu');
+    const selected = document.getElementById('selectedOption');
 
-    button.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
+    button.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('hidden');
+      button.setAttribute('aria-expanded', !isOpen);
     });
 
     // select option
-    menu.addEventListener("click", (e) => {
-      const option = e.target.closest("button");
+    menu.addEventListener('click', (e) => {
+      const option = e.target.closest('button');
       if (!option) return;
 
       selected.textContent = option.textContent;
-      menu.classList.add("hidden");
+      menu.classList.add('hidden');
     });
 
     // close when clicking outside
-    document.addEventListener("click", (e) => {
+    document.addEventListener('click', (e) => {
       if (!button.contains(e.target) && !menu.contains(e.target)) {
-        menu.classList.add("hidden");
+        menu.classList.add('hidden');
       }
     });
 
-    const editButton = document.getElementById("editButton");
+    const editButton = document.getElementById('editButton');
     const editMenu = editButton.nextElementSibling;
 
-    editButton.addEventListener("click", () => {
-      editMenu.classList.toggle("hidden");
+    editButton.addEventListener('click', () => {
+      const isOpen = editMenu.classList.toggle('hidden');
+      editButton.setAttribute('aria-expanded', !isOpen);
     });
 
     // close when clicking outside
-    document.addEventListener("click", (e) => {
+    document.addEventListener('click', (e) => {
       if (!editButton.contains(e.target) && !editMenu.contains(e.target)) {
-        editMenu.classList.add("hidden");
+        editMenu.classList.add('hidden');
       }
     });
   </script>

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Pink Club, your ultimate destination for all things pink! Join our vibrant community to share your love for pink fashion, decor, and lifestyle. Connect with fellow pink enthusiasts, discover the latest trends, and celebrate the beauty of pink in every aspect of life. Whether you're a fan of pastel pinks or bold magentas, Pink Club is the perfect place to express your passion for this iconic color. Join us today and immerse yourself in a world of pink perfection!"
+    />
     <title>Pink Club</title>
     <link rel="stylesheet" href="./dist/output.css" />
     <link
@@ -56,7 +60,7 @@
         </ul>
       </nav>
 
- <div class="flex items-center justify-between md:hidden">
+      <div class="flex items-center justify-between md:hidden">
         <a href="#" class="text-pink-50 text-2xl font-bold font-['DynaPuff']"
           ><span
             class="text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
@@ -64,18 +68,30 @@
             Pink Club</span
           ></a
         >
-      <div class="flex justify-end">
-        <button id="menuButton" class="text-2xl text-pink-200 md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <div class="flex justify-end">
+          <button
+            id="menuButton"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            class="text-2xl text-pink-200 md:hidden"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
     </header>
     <!--Mobile menu-->
     <div
       id="mobileMenu"
       class="fixed top-0 left-0 z-50 hidden h-screen w-full flex-col items-center justify-start gap-6 bg-pink-700/95 text-pink-100 md:hidden"
+      aria-hidden="true"
     >
-      <button id="closeMobileMenu" class="absolute top-4 right-4 text-2xl">
+      <button
+        id="closeMobileMenu"
+        class="absolute top-4 right-4 text-2xl"
+        aria-label="Close menu"
+      >
         <i class="fa-solid fa-xmark"></i>
       </button>
       <a
@@ -83,9 +99,7 @@
         class="mt-12 text-6xl font-extrabold font-['DynaPuff'] bg-gradient-to-r from-pink-100 via-pink-400 to-pink-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
         >Pink Club</a
       >
-      <a href="/feed/index.html" class="mt-8 text-2xl hover:underline"
-        >Home</a
-      >
+      <a href="/feed/index.html" class="mt-8 text-2xl hover:underline">Home</a>
       <a href="/profile/index.html" class="text-2xl hover:underline"
         >Profile Page</a
       >
@@ -112,12 +126,14 @@
         Log in to Your Account!
       </h3>
       <form id="loginForm" class="w-48">
+        <label for="username" class="sr-only">Username</label>
         <input
           id="username"
           type="text"
           placeholder="Enter your username"
           class="w-full p-2 mb-4 rounded border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
         />
+        <label for="password" class="sr-only">Password</label>
         <input
           id="password"
           type="password"
@@ -131,6 +147,8 @@
           Login successful!
         </p>
         <button
+          id="loginButton"
+          aria-label="Login to your account"
           type="submit"
           class="w-full bg-pink-400 text-white p-2 rounded hover:bg-pink-300 transition duration-200 font-['DynaPuff']"
         >
