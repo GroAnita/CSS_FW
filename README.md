@@ -34,6 +34,7 @@ The project focuses on clean UI, accessibility and a modern front-end developmen
 
 ## Project Structure
 
+```bash
 src/
 |--JS/
 | |--slider.js
@@ -46,8 +47,9 @@ src/
 dist/
 feed/
 profile/
-registraion/
+registration/
 index.html
+```
 
 ## What have I learned
 
