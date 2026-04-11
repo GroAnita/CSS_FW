@@ -75,6 +75,11 @@ index.html
 - Comment functionality backend
 - infinite scroll for the feed
 
+## Use of AI
+
+- Not a lot of AI use on this project, but it did help me find fun fonts for my project.
+- Since I have already used TailwindCss before and I am finding it quite intuitive and fun to use, atleast the way its used now, AI havent been a needed source. And this page is more than enough as a source it has everything I have had a question about for this project: [TailwindCss](https://tailwindcss.com)
+
 ## Live Demo
 
 [Github Live Demo:](https://groanita.github.io/CSS_FW/)
