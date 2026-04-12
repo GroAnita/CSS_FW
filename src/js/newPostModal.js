@@ -37,31 +37,31 @@ function newPostModal() {
       </div>`;
 }
 
-document.getElementById("makeNewPost").addEventListener("click", () => {
-  const modalContainer = document.createElement("div");
+document.getElementById('makeNewPost').addEventListener('click', () => {
+  const modalContainer = document.createElement('div');
   modalContainer.classList.add(
-    "fixed",
-    "inset-0",
-    "bg-black",
-    "bg-opacity-50",
-    "flex",
-    "items-center",
-    "justify-center",
-    "z-50",
+    'fixed',
+    'inset-0',
+    'bg-black',
+    'bg-opacity-50',
+    'flex',
+    'items-center',
+    'justify-center',
+    'z-50',
   );
   modalContainer.innerHTML = newPostModal();
   document.body.appendChild(modalContainer);
 
-  modalContainer.addEventListener("click", (e) => {
+  modalContainer.addEventListener('click', (e) => {
     if (e.target === modalContainer) {
       document.body.removeChild(modalContainer);
     }
   });
 });
 
-document.addEventListener("click", (e) => {
-  if (e.target.id === "postButton") {
-    const modalContainer = e.target.closest(".fixed");
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'postButton') {
+    const modalContainer = e.target.closest('.fixed');
     if (modalContainer) {
       document.body.removeChild(modalContainer);
     }

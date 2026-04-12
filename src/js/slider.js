@@ -1,33 +1,33 @@
-const slider = document.getElementById("slider");
-document.getElementById("slideLeft").addEventListener("click", () => {
-  slider.scrollBy({ left: -200, behavior: "smooth" });
+const slider = document.getElementById('slider');
+document.getElementById('slideLeft').addEventListener('click', () => {
+  slider.scrollBy({ left: -200, behavior: 'smooth' });
 });
-document.getElementById("slideRight").addEventListener("click", () => {
-  slider.scrollBy({ left: 200, behavior: "smooth" });
+document.getElementById('slideRight').addEventListener('click', () => {
+  slider.scrollBy({ left: 200, behavior: 'smooth' });
 });
 
 let isDown = false;
 let startX;
 let scrollLeft;
 
-slider.addEventListener("mousedown", (e) => {
+slider.addEventListener('mousedown', (e) => {
   isDown = true;
-  slider.classList.add("cursor-grabbing");
+  slider.classList.add('cursor-grabbing');
   startX = e.pageX - slider.offsetLeft;
   scrollLeft = slider.scrollLeft;
 });
 
-slider.addEventListener("mouseleave", () => {
+slider.addEventListener('mouseleave', () => {
   isDown = false;
-  slider.classList.remove("cursor-grabbing");
+  slider.classList.remove('cursor-grabbing');
 });
 
-slider.addEventListener("mouseup", () => {
+slider.addEventListener('mouseup', () => {
   isDown = false;
-  slider.classList.remove("cursor-grabbing");
+  slider.classList.remove('cursor-grabbing');
 });
 
-slider.addEventListener("mousemove", (e) => {
+slider.addEventListener('mousemove', (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - slider.offsetLeft;
